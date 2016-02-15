@@ -6,53 +6,54 @@ import static org.junit.Assert.assertEquals;
 
 public class FromVideoTest {
     @Test
-    public void test01() {
+    public void test_codex_codey() {
         assertMethod("codex", "codey");
+        assertMethod("primaxcome", "primaycome");
     }
 
     @Test
-    public void test02() {
+    public void test_x_y() {
         assertMethod("x", "y");
-    }
-
-    @Test
-    public void test03() {
-        assertMethod("xxhixx", "yyhiyy");
-    }
-
-    @Test
-    public void test04() {
-        assertMethod("xhixhix", "yhiyhiy");
-    }
-
-    @Test
-    public void test05() {
-        assertMethod("hiy", "hiy");
-    }
-
-    @Test
-    public void test06() {
-        assertMethod("h", "h");
-    }
-
-    @Test
-    public void test07() {
-        assertMethod("", "");
-    }
-
-    @Test
-    public void test08() {
+        assertMethod("xx", "yy");
         assertMethod("xxx", "yyy");
     }
 
     @Test
-    public void test09() {
+    public void test_xxhixx_yyhiyy() {
+        assertMethod("xxhixx", "yyhiyy");
+    }
+
+    @Test
+    public void test_xhixhix_yhiyhiy() {
+        assertMethod("xhixhix", "yhiyhiy");
+    }
+
+    @Test
+    public void test_hiy_hiy() {
+        assertMethod("hiy", "hiy");
+        assertMethod("yih", "yih");
+    }
+
+    @Test
+    public void test_h_h() {
+        assertMethod("h", "h");
+        assertMethod("a", "a");
+    }
+
+    @Test
+    public void test_empty() {
+        assertMethod("", "");
+    }
+
+    @Test
+    public void test_yyhxyi_yyhyyi() {
         assertMethod("yyhxyi", "yyhyyi");
     }
 
     @Test
-    public void test10() {
+    public void test_without_change() {
         assertMethod("hihi", "hihi");
+        assertMethod("haha", "haha");
     }
 
 
